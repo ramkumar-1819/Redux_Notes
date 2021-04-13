@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './Components/Form';       //Form componet for displaying the Notes form
+import Display from './Components/Display'; //Display Component for displaying the FormNotes in underneath of form.
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+      <>
+      <h1 className="heading">PROGRAD NOTES</h1>
+      <Form/>
+      <hr></hr>
+      <Display/>
+      </>
+    )
 }
 
 export default App;
